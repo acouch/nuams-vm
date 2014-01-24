@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sudo /sbin/ifdown eth0 ; sudo /sbin/ifup eth0

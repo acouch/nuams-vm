@@ -1,0 +1,13 @@
+#!/bin/sh
+FIGLET=`/usr/bin/dpkg-query -W figlet`
+NUAMS="Nuams"
+SERVER=`hostname -s`
+if [ "" !=  "$FIGLET" ]; then
+  NUAMS=`figlet $NUAMS`
+  SERVER=`figlet Devel-VM-1.0`
+fi
+echo
+echo "Welcome to"
+echo "$SERVER"
+echo "Provided by"
+echo "$NUAMS"
